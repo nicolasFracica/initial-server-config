@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Instalar nvm.
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-source ~/.bashrc
+# Ejecutar después de haber instalado nvm y usado source ~/.bashrc
 nvm install 12
 npm install -g nodemon
 
