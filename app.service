@@ -1,0 +1,15 @@
+[Unit]
+Description=<nombre de la aplicación>
+
+[Service]
+ExecStart=/usr/bin/nodemon /var/www/<ubicación de app.js | index.js>
+Restart=always
+RestartSec=10
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=<development | production> PORT=<puerto de la aplicación>
+WorkingDirectory=/var/www/<ubicación del proyecto>
+
+[Install]
+WantedBy=multi-user.target
