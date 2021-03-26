@@ -1,8 +1,13 @@
 #!/bin/bash
 
-# Import
+# Instalar nvm.
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# Imports requeridos
 . /home/administrador/.nvm/nvm.sh
-#. /home/administrador/.bashrc
+. /home/administrador/.bashrc
+
+source ~/.bashrc
 
 # Ejecutar después de haber instalado nvm y usado source ~/.bashrc
 nvm install 12
