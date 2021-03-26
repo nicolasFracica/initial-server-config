@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Import
+. /home/administrador/.nvm/nvm.sh
+#. /home/administrador/.bashrc
+
 # Ejecutar después de haber instalado nvm y usado source ~/.bashrc
 nvm install 12
 npm install -g nodemon
