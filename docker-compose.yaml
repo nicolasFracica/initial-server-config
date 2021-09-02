@@ -1,0 +1,13 @@
+
+version: "3"
+
+services:
+        efide_api:
+                build: .
+
+                volumes:
+                        - .:/Efide-API
+                        - /Efide-API/node_modules
+
+                ports:
+                        - "8081:8081" 
